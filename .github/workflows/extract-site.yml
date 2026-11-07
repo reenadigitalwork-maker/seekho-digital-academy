@@ -1,0 +1,46 @@
+
+name: Extract Seekho Digital Website
+
+on:
+  push:
+    branches:
+      - platform-redesign
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: platform-redesign
+
+      - name: Extract website ZIP
+        run: |
+          set -e
+          mkdir -p /tmp/site
+          unzip -q seekho-digital-academy.zip -d /tmp/site
+
+          INDEX=$(find /tmp/site -name index.html -print -quit)
+          test -n "$INDEX"
+          ROOT=$(dirname "$INDEX")
+
+          test -f "$ROOT/learning.html"
+          test -f "$ROOT/assets/css/style.css"
+          test -f "$ROOT/assets/js/site.js"
+
+          cp -a "$ROOT"/. ./
+
+          rm -f seekho-digital-academy.zip
+          rm -f .github/workflows/extract-site.yml
+
+      - name: Commit extracted files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Extract Seekho Digital website foundation"
+          git push origin HEAD:platform-redesign
