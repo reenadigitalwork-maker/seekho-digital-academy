@@ -35,3 +35,63 @@ details.acc{background:#fff;border-radius:16px;margin:10px 0;box-shadow:var(--sh
 .list{padding-left:1.2em}.list li{margin:.4em 0}
 .js .rv{opacity:0;transform:translateY(18px);transition:opacity .5s,transform .5s}.js .rv.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}}
+/* Seekho Digital: responsive footer navigation fix */
+.foot .fgrid {
+  display: grid;
+  grid-template-columns: minmax(180px, 1.25fr) repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  align-items: start;
+}
+
+.foot nav {
+  display: block !important;
+  position: static !important;
+  inset: auto !important;
+  padding: 0 !important;
+  max-height: none !important;
+  overflow: visible !important;
+  border: 0 !important;
+  background: transparent !important;
+  backdrop-filter: none !important;
+  min-width: 0;
+}
+
+.foot nav > ul {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  gap: 3px !important;
+  align-items: start !important;
+}
+
+.foot nav li { min-width: 0; }
+
+.foot nav a {
+  display: block;
+  min-height: 40px;
+  padding: 7px 0;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.foot .fgrid > div:first-child { min-width: 0; }
+.foot .fine { line-height: 1.6; }
+
+@media (max-width: 900px) {
+  .foot .fgrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px 18px;
+  }
+
+  .foot .fgrid > div:first-child {
+    grid-column: 1 / -1;
+  }
+
+  .foot nav h2 { margin-bottom: 8px; }
+  .foot nav a { padding: 6px 0; }
+  .foot .fine { margin-top: 22px; }
+}
+
+@media (max-width: 360px) {
+  .foot .fgrid { column-gap: 12px; }
+  .foot nav a { font-size: .92rem; }
+}
