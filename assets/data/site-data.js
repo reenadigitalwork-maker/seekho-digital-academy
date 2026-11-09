@@ -1,5 +1,5 @@
 const SITE={
-nav:[["index.html","Home"],["about.html","About"],["learning.html","Our Learning"],["practice.html","Practice"],["projects.html","Projects"]],
+nav:[["index.html","Home"],["about.html","About"],["learning.html","Our Learning"],["my-learning.html","My Learning"],["practice.html","Practice"],["projects.html","Projects"]],
 more:[["interview.html","Interview Prep"],["blog.html","Blog"],["updates.html","Latest Updates"],["resources.html","Resources"],["workbook.html","Workbook"],["community.html","Community"],["faq.html","FAQ"]],
 modules:[
 {t:"Fundamentals & Digital Ecosystem",o:"Explain marketing, channels and funnels, and set a measurable goal.",p:"Marketing strategy brief"},
@@ -17,4 +17,5 @@ missions:[
 ["Understand","Short lessons, everyday comparisons and diagrams. Technical words are explained when they first appear."],
 ["Practise","Small tasks and quizzes. Mistakes are safe, and wrong answers come with helpful explanations."],
 ["Build","Each module ends with a project for the fictional Maple Lane Home Bakery. Nothing is graded by a robot."],
-["Connect","A student community is planned. It needs a real, moderated backend first, so it is not live yet."]]};
+["Connect","A student community is planned. It needs a real, moderated backend first, so it is not live yet."]]
+};
