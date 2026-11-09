@@ -1,0 +1,22 @@
+/* Projects hub: clear progress, readable task lists and mobile actions. */
+.project-progress{background:#f1efff;border:1px solid #e2def8;border-radius:16px;padding:17px 19px;margin:0 0 18px;display:grid;gap:12px}
+.project-progress>div:first-child{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline}
+.project-progress strong{color:#312e81;font-size:.88rem}
+.project-progress span{color:#6d6884;font-size:.74rem;line-height:1.5}
+.project-progress-track{height:8px;background:#dedaf3;border-radius:99px;overflow:hidden}
+.project-progress-track span{display:block;height:100%;background:#087f78;border-radius:99px;transition:width .2s ease}
+.project-card-section{margin-top:5px}
+.project-card-section h4{font-size:.78rem;color:#3d3973;margin:8px 0}
+.project-card-section ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.project-check{display:flex;align-items:flex-start;gap:9px;cursor:pointer;line-height:1.5}
+.project-check input{width:17px;height:17px;flex:0 0 auto;margin:2px 0 0;accent-color:#087f78}
+.project-check span{font-size:.78rem;color:#5f5b73}
+.project-check input:checked+span{text-decoration:line-through;color:#89859a}
+.project-steps{margin-top:14px;border-top:1px solid #ece9f3;padding-top:12px}
+.project-steps summary{font-size:.78rem;font-weight:850;color:#4d4686;cursor:pointer}
+.project-steps ol{padding-left:1.25rem;color:#66627a;font-size:.78rem;line-height:1.7}
+.project-card-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:auto;padding-top:14px}
+.project-card-actions a{margin:0;padding:0}
+.project-template{border:1px solid #dcd7ef;background:#f5f3fc;color:#49437e;border-radius:9px;padding:9px 11px;font:inherit;font-size:.74rem;font-weight:850;cursor:pointer}
+.project-card-note{font-size:.7rem!important;color:#817b91!important;border-top:1px solid #eeeaf4;padding-top:11px;margin:13px 0 0!important}
+@media(max-width:520px){.project-progress>div:first-child{display:grid;gap:4px}.project-card-actions{align-items:stretch;flex-direction:column}.project-card-actions a,.project-template{width:100%;text-align:center}}
