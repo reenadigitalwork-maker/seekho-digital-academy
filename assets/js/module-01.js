@@ -12,7 +12,7 @@
     {
       title: 'Marketing is about creating value—not shouting louder.',
       short: 'Marketing: the real meaning', category: 'THE BIG IDEA', time: '15–20 MIN',
-      intro: 'Imagine opening a small bakery. You can bake the best bread in the neighbourhood, but that alone does not guarantee the right people will discover it, understand why it is useful, or feel confident enough to order. Marketing connects a real customer need with an offer that creates value—and helps both sides understand that value.',
+      intro: 'Imagine opening a small bakery. You can prepare delicious breakfast boxes, but that alone does not guarantee the right people will discover the offer, understand why it is useful, or feel confident enough to order. Marketing connects a real customer need with an offer that creates value—and helps both sides understand that value.',
       body: `
         <div class="m1x-definition"><b>Professional definition, in plain language</b><p>The American Marketing Association describes marketing as the activities and processes involved in creating, communicating, delivering and exchanging offerings that have value for customers, partners and society. In everyday words: understand people, make something useful, explain it honestly, make it available and learn from the experience. <a href="https://www.ama.org/the-definition-of-marketing-what-is-marketing/" target="_blank" rel="noopener">Read the AMA definition ↗</a></p></div>
         <h3>Marketing is bigger than promotion</h3>
@@ -326,10 +326,12 @@
     const inconsistent = e > v || o > e;
     const enquiryRate = v ? e / v * 100 : 0;
     const orderRate = v ? o / v * 100 : 0;
+    const enquiryOrderRate = e && !inconsistent ? o / e * 100 : null;
     const costOrder = o ? s / o : null;
     const roas = s ? r / s : null;
     $('#m1x-enquiry-rate').textContent = `${enquiryRate.toFixed(1)}%`;
     $('#m1x-order-rate').textContent = `${orderRate.toFixed(1)}%`;
+    $('#m1x-enquiry-order-rate').textContent = enquiryOrderRate === null ? '—' : `${enquiryOrderRate.toFixed(1)}%`;
     $('#m1x-cost-order').textContent = costOrder === null ? '—' : currency(costOrder);
     $('#m1x-roas').textContent = roas === null ? '—' : `${roas.toFixed(1)}×`;
     $('#m1x-funnel-visits').textContent = fmt.format(v); $('#m1x-funnel-enquiries').textContent = fmt.format(e); $('#m1x-funnel-orders').textContent = fmt.format(o);
