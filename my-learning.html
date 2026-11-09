@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>My Learning Dashboard | Seekho Digital</title>
+  <meta name="description" content="See your digital marketing learning progress, continue a module and back up your practice notes privately on this device.">
+  <meta name="theme-color" content="#312E81">
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/my-learning.css">
+</head>
+<body data-root="">
+  <noscript><p class="ml-noscript">Enable JavaScript to view your locally saved learning progress. Your course lessons are still available from the <a href="learning.html">learning roadmap</a>.</p></noscript>
+  <main id="main" class="ml-page" data-learning-dashboard>
+    <section class="ml-hero">
+      <div class="ml-wrap">
+        <div class="ml-hero-copy">
+          <span class="ml-eyebrow"><i></i> YOUR PERSONAL LEARNING SPACE</span>
+          <h1>Your progress.<br><em>Your pace.</em></h1>
+          <p>Pick up where you left off, see what you have practised and keep every small win moving forward.</p>
+          <div class="ml-hero-actions">
+            <a class="ml-button ml-button-yellow" id="ml-resume-link" href="modules/module-01.html">Start learning <span aria-hidden="true">→</span></a>
+            <a class="ml-button ml-button-quiet" href="learning.html">Explore all modules</a>
+          </div>
+          <p class="ml-privacy"><span aria-hidden="true">🔒</span> Your progress is stored in this browser on this device. It is not uploaded to an account.</p>
+        </div>
+        <div class="ml-hero-visual">
+          <div class="ml-orbit ml-orbit-one"></div><div class="ml-orbit ml-orbit-two"></div>
+          <div class="ml-orbit-core"><span>SMALL STEPS</span><b>BIG<br>GROWTH</b><i aria-hidden="true">✦</i></div>
+          <span class="ml-float ml-float-a">LEARN</span><span class="ml-float ml-float-b">PRACTISE</span><span class="ml-float ml-float-c">BUILD</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="ml-overview ml-wrap" aria-labelledby="ml-overview-title">
+      <div class="ml-section-heading"><div><span class="ml-kicker">YOUR LEARNING SNAPSHOT</span><h2 id="ml-overview-title">Every step <em>counts.</em></h2></div><span class="ml-local-label">Saved on this device</span></div>
+      <div class="ml-stats" id="ml-stats" aria-live="polite">
+        <article class="ml-stat"><span>LESSONS COMPLETED</span><b>—</b><small>Across all modules</small></article>
+        <article class="ml-stat"><span>MODULES STARTED</span><b>—</b><small>Your learning journey</small></article>
+        <article class="ml-stat"><span>PRACTICE ATTEMPTS</span><b>—</b><small>Questions are for learning</small></article>
+      </div>
+    </section>
+
+    <section class="ml-continue">
+      <div class="ml-wrap ml-continue-grid">
+        <div><span class="ml-kicker ml-kicker-light">YOUR NEXT STEP</span><h2 id="ml-next-title">Your next lesson is waiting.</h2><p id="ml-next-copy">Choose a module and begin with one small step.</p><a class="ml-button ml-button-yellow" id="ml-next-link" href="modules/module-01.html">Open Module 01 <span aria-hidden="true">→</span></a></div>
+        <div class="ml-ring-wrap"><div class="ml-ring" id="ml-ring" role="img" aria-label="Overall course progress"><span id="ml-overall-pct">0%</span></div><p><b id="ml-overall-count">0 of 0 lessons</b><span>completed across the learning path</span></p></div>
+      </div>
+    </section>
+
+    <section class="ml-modules ml-wrap" aria-labelledby="ml-modules-title">
+      <div class="ml-section-heading"><div><span class="ml-kicker">THE 10-MODULE JOURNEY</span><h2 id="ml-modules-title">Your learning <em>map.</em></h2><p>Open any module, revisit a lesson or continue with the next topic.</p></div><a class="ml-text-link" href="learning.html">View learning roadmap <span aria-hidden="true">→</span></a></div>
+      <div class="ml-module-grid" id="ml-module-grid"><p class="ml-loading">Preparing your learning map…</p></div>
+    </section>
+
+    <section class="ml-tools">
+      <div class="ml-wrap">
+        <div class="ml-section-heading"><div><span class="ml-kicker">YOUR LEARNING TOOLKIT</span><h2>Keep your work <em>safe and useful.</em></h2></div></div>
+        <div class="ml-tool-grid">
+          <article><span class="ml-tool-icon">▤</span><h3>Learning workbook</h3><p>Keep your own notes, reflections and questions in one place.</p><a href="workbook.html">Open workbook →</a></article>
+          <article><span class="ml-tool-icon">✎</span><h3>Practice Zone</h3><p>Try questions, read explanations and revisit the ones you missed.</p><a href="practice.html">Practise now →</a></article>
+          <article><span class="ml-tool-icon">◇</span><h3>Portfolio projects</h3><p>Turn lesson ideas into clearly labelled practice work.</p><a href="projects.html">View projects →</a></article>
+        </div>
+        <div class="ml-backup">
+          <div><span class="ml-kicker">YOUR DATA, YOUR CHOICE</span><h3>Back up your learning progress.</h3><p>Download a private backup before changing phones or clearing browser data. You can restore it later on this device or another one.</p><small id="ml-backup-status" role="status" aria-live="polite">No data is sent anywhere.</small></div>
+          <div class="ml-backup-actions"><button class="ml-button ml-button-dark" type="button" id="ml-export">Download progress backup</button><button class="ml-button ml-button-outline" type="button" id="ml-import-trigger">Restore a backup</button><input type="file" id="ml-import-file" accept="application/json,.json" hidden aria-label="Choose a Seekho progress backup"><span class="ml-backup-note">Restoring replaces matching saved learning data in this browser.</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="ml-last"><div class="ml-wrap"><p>There is no race. Build one skill, practise one idea and celebrate the progress you make.</p><a href="learning.html">Back to the learning roadmap →</a></div></section>
+  </main>
+  <script src="assets/data/site-data.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/data/module-courses.js"></script>
+  <script src="assets/js/my-learning.js"></script>
+</body>
+</html>

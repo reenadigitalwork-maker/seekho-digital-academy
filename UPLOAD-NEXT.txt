@@ -1,0 +1,37 @@
+SEEKHO DIGITAL — MY LEARNING DASHBOARD PATCH
+
+Files in this patch:
+1. my-learning.html                         (new)
+2. assets/css/my-learning.css               (new)
+3. assets/js/my-learning.js                 (new)
+4. assets/data/site-data.js                 (updated navigation)
+
+Upload to: reenadigitalwork-maker/seekho-digital-academy
+Branch: platform-redesign
+Destination: repository root, preserving the folders shown above.
+
+On GitHub:
+- Open the platform-redesign branch.
+- Choose Add file > Upload files.
+- Upload these four files while preserving the folder paths.
+- Commit to platform-redesign, not main.
+- Commit message: Add My Learning dashboard and progress backup
+
+What it adds:
+- One dashboard for progress across all 10 modules.
+- Per-module progress bars and start/continue/review links.
+- Overall completion summary and practice-attempt count.
+- Progress backup download and safe restore using a JSON file.
+- My Learning link in the site's main navigation.
+
+Privacy:
+- The dashboard reads the same localStorage keys already used by the course pages.
+- Progress remains in the current browser on the current device unless the learner exports and moves a backup file.
+- No sign-in or server upload is added.
+
+Checks performed:
+- HTML parser check: passed.
+- JavaScript syntax check (node --check): passed.
+- Site data JavaScript syntax check: passed.
+- Required file and existing progress-key checks: passed.
+- Browser interaction and mobile visual testing: not performed in this environment.
