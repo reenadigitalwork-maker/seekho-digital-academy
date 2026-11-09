@@ -1,0 +1,21 @@
+SEEKHO DIGITAL — PHASE 3 EDITORIAL + PRACTICE LAB PATCH
+Target branch: platform-redesign ONLY
+
+Files in this patch:
+1) blog.html                         -> repository root (replace existing)
+2) updates.html                      -> repository root (replace existing)
+3) assets/css/editorial-lab.css      -> assets/css/ (new file)
+4) assets/js/editorial-lab.js        -> assets/js/ (new file)
+
+Upload each file to the exact destination shown above. Do not upload this ZIP or guide into the live website.
+Do not change the main branch.
+
+Suggested commit message:
+Build editorial learning library and interactive practice lab
+
+After commit, check the latest GitHub Pages deployment in Actions. Then test:
+- /blog.html: note search and category filters
+- /blog.html#practice-tools: calculator outputs, zero denominator states, reset, UTM builder and copy
+- /updates.html: update cards, official source links and review checklist
+
+The two update page entries are dated by the official sources; the page review date is 9 November 2026. Region/account rollout may differ, as the page explains.
