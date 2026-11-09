@@ -1,0 +1,24 @@
+SEEKHO DIGITAL — UPLOAD GUIDE
+
+Repository: https://github.com/reenadigitalwork-maker/seekho-digital-academy
+Target branch: platform-redesign
+Do not upload these changes to main.
+
+There are two bundles:
+1) seekho-digital-academy-updated-full.zip — complete updated repository snapshot.
+2) seekho-digital-academy-changed-files.zip — only files added or changed, preserving their repository paths, plus this guide and the test report.
+
+IMPORTANT: GitHub does not unpack a ZIP just because the ZIP file is uploaded to the repository. Extract the changed-files ZIP first, then upload the extracted files while preserving folders such as assets/css, assets/js, assets/data and modules.
+
+Suggested GitHub web flow:
+1. Open the repository and select branch platform-redesign.
+2. Choose Add file > Upload files.
+3. Select/drag the extracted changed files and folders, keeping the same folder structure.
+4. Review the changed file list before committing.
+5. Commit message: Complete Seekho Digital learning platform and practice tools
+6. Commit directly to platform-redesign (not main).
+7. Wait for GitHub Pages to deploy, then check the live site on desktop and phone.
+
+If the mobile file picker cannot preserve nested folders, use a desktop GitHub upload flow or a local Git client. Do not delete the existing repository folders or overwrite main.
+
+The bundle is ready for upload, but it has not been committed or published by this assistant.
