@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 480" role="img" aria-labelledby="title desc">
+  <title id="title">A simple digital marketing journey for a home bakery</title>
+  <desc id="desc">A friendly illustration of a home bakery, a social media cake post and a customer asking to place an order.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff3df"/><stop offset="1" stop-color="#e7e3ff"/></linearGradient>
+    <linearGradient id="shop" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#fff8ef"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#24204f" flood-opacity=".13"/></filter>
+  </defs>
+  <circle cx="510" cy="80" r="58" fill="#ffd56a" opacity=".8"/>
+  <circle cx="92" cy="378" r="35" fill="#f47c70" opacity=".65"/>
+  <path d="M73 300C115 238 157 260 203 208S294 132 358 176s94 84 164 29" fill="none" stroke="#aaa1dc" stroke-width="5" stroke-linecap="round" stroke-dasharray="3 13"/>
+  <g filter="url(#shadow)">
+    <rect x="34" y="83" width="244" height="282" rx="27" fill="url(#shop)"/>
+    <path d="M54 160h204v171H54z" fill="#f4d8c5"/>
+    <path d="M54 160h204v42H54z" fill="#f47c70"/>
+    <path d="M54 160h204v42H54z" fill="#f47c70"/>
+    <path d="M54 202h204" stroke="#fff" stroke-width="7" stroke-dasharray="23 10"/>
+    <path d="M83 160l17-46h141l17 46" fill="#ffd56a" stroke="#db9d56" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M104 114h132l-10-27H114z" fill="#f2b75c"/>
+    <rect x="77" y="224" width="82" height="107" rx="10" fill="#fff8ef"/>
+    <rect x="171" y="224" width="68" height="107" rx="10" fill="#e2f1e8"/>
+    <path d="M91 300h54v-38q-27-37-54 0z" fill="#f5a28f"/>
+    <path d="M98 264c2-25 37-26 40 0" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+    <path d="M183 286h44v-42h-44z" fill="#fff"/>
+    <path d="M177 244h56l-7-17h-42z" fill="#f47c70"/>
+    <text x="156" y="355" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#3a326e">MAPLE LANE</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="333" y="43" width="224" height="245" rx="25" fill="#fff"/>
+    <rect x="350" y="60" width="190" height="35" rx="10" fill="#f0edff"/>
+    <circle cx="369" cy="77" r="8" fill="#f47c70"/>
+    <rect x="384" y="72" width="79" height="9" rx="4" fill="#8f87bd"/>
+    <rect x="350" y="108" width="190" height="119" rx="14" fill="#fff0e5"/>
+    <circle cx="445" cy="168" r="48" fill="#f5c6ae"/>
+    <path d="M404 174q41-51 82 0v21h-82z" fill="#fff"/>
+    <path d="M414 163q31-40 63 0" fill="none" stroke="#f47c70" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="445" cy="148" r="8" fill="#f47c70"/>
+    <path d="M435 139q10-18 20 0" fill="none" stroke="#f47c70" stroke-width="5"/>
+    <rect x="350" y="239" width="102" height="8" rx="4" fill="#c8c2e6"/>
+    <rect x="350" y="255" width="146" height="8" rx="4" fill="#e2dfef"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="354" y="321" width="228" height="112" rx="23" fill="#e2f3ea"/>
+    <path d="M376 348h153q11 0 11 11v29q0 11-11 11h-92l-22 15v-15h-39q-11 0-11-11v-29q0-11 11-11z" fill="#fff"/>
+    <text x="393" y="369" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#3c6c5c">Hi! Can I order a cake?</text>
+    <text x="393" y="388" font-family="Arial,sans-serif" font-size="10" fill="#718b7f">I saw your post.</text>
+    <circle cx="548" cy="407" r="17" fill="#27a27d"/>
+    <path d="M540 407l6 6 11-13" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g font-family="Arial,sans-serif" font-weight="700" fill="#37316e">
+    <rect x="29" y="24" width="119" height="31" rx="15" fill="#fff" opacity=".93"/><text x="88" y="44" text-anchor="middle" font-size="11">A SMALL BUSINESS</text>
+    <rect x="456" y="298" width="131" height="29" rx="14" fill="#ffd56a"/><text x="521" y="317" text-anchor="middle" font-size="10">A CUSTOMER ACTION</text>
+  </g>
+  <g fill="#fff"><path d="M302 76l5 12 12 5-12 5-5 12-5-12-12-5 12-5z"/><path d="M300 355l4 9 9 4-9 4-4 9-4-9-9-4 9-4z"/></g>
+</svg>
