@@ -1,6 +1,8 @@
 const SITE={
-nav:[["index.html","Home"],["about.html","About"],["learning.html","Our Learning"],["my-learning.html","My Learning"],["practice.html","Practice"],["projects.html","Projects"]],
-more:[["interview.html","Interview Prep"],["blog.html","Blog"],["updates.html","Latest Updates"],["resources.html","Resources"],["workbook.html","Workbook"],["community.html","Community"],["faq.html","FAQ"]],
+// Keep only the most useful choices visible in the main navigation.
+nav:[["index.html","Home"],["learning.html","Start Learning"],["practice.html","Practice"],["projects.html","Projects"]],
+// Supporting pages remain available, but do not compete with the first learning action.
+more:[["my-learning.html","My Learning"],["workbook.html","Workbook"],["interview.html","Interview Prep"],["blog.html","Blog & Guides"],["resources.html","Resources"],["faq.html","FAQ"]],
 modules:[
 {t:"Fundamentals & Digital Ecosystem",o:"Explain marketing, channels and funnels, and set a measurable goal.",p:"Marketing strategy brief"},
 {t:"Websites & Landing Pages",o:"Understand domains, hosting and what makes a landing page work.",p:"Small-business website plan"},
